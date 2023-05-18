@@ -1,0 +1,37 @@
+#+title: smh - Stalk My Home (.ge)
+
+* Introduction
+
+This project is meant to simplify searching for a house. The MVP will implement
+the following:
+
+- Permanently store a search query that is applicable on [[https://myhome.ge][myhome.ge]].
+- Periodically perform the search.
+- Automatically message the user whenever new applications get posted.
+
+* Further goals
+
+- Support [[https://ss.ge][ss.ge]].
+- Maybe implement some sort of deduplication mechanism so that the user is not
+  warned about houses that they have seen before.
+- Dream: add support for finding posts with the same or very similar house
+  pictures accross the two (or more) sites.
+
+* Usage
+
+Compile with ~lein uberjar~, launch with ~java -jar smh-0.1.0-standalone.jar~
+
+* License
+
+Copyright © 2023
+
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.
+
+This Source Code may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License, v. 2.0 are satisfied: GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or (at your
+option) any later version, with the GNU Classpath Exception which is available
+at https://www.gnu.org/software/classpath/license.html.
