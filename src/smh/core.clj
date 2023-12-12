@@ -76,6 +76,16 @@
           inc
           set-id!))))
 
+(defn say-goodbye
+  []
+  (let [users (db/get-subscribed-users)]
+    (doseq [user users]
+      (bot/send-text-message mybot (:id user)
+                             "ძმ(დ)აო! ეს ბოტი დავიწყებას მიეცი! აღარ უნდა ავტორს მეტი! გვბლოკავენ და!.. თან სახლიც იყიდა უკვე."))))
+
+(comment
+  (say-goodbye))
+
 (defn send-fresh-listings
   []
   (log/info "Processing fresh listings...")
